@@ -1,10 +1,13 @@
 import { Bell, Check, Heart, Search, User } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export const PageHeader = () => {
   return (
     <div className="relative mx-4 mb-6 flex items-center justify-between gap-6 pt-2">
       <div className="absolute inset-0 flex justify-center md:static">
-        <a href="/">ロゴ</a>
+        <a href="/">
+          <img src={logo} className="h-[50px]" />
+        </a>
       </div>
       <form className="hidden grow md:block">
         <div className="flex max-w-[560px] overflow-hidden rounded border border-secondary-border has-[:focus]:border-gray-800">
